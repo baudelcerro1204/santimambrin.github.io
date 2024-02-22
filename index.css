@@ -71,7 +71,6 @@ h6 {
     }
 
     ul.intro-social-buttons > li {
-        display: block;
         margin-bottom: 20px;
         padding: 0;
     }
@@ -251,9 +250,37 @@ h2.section-heading {
     margin-top: 0;
 }
 
-@media (max-width:
-767px) {
-    .banner {
-        padding: 100px 0;
+@media (max-width: 767px) {
+    .content-section-a {
+        padding: 20px 0; /* Ajusta el espaciado superior e inferior según sea necesario */
+        height: auto; /* Ajusta la altura automáticamente para que se adapte al contenido */
+    }
+
+    .bg-overlay2 {
+        margin-top: 0;
+        height: auto;
+    }
+
+    .col-lg-5.col-lg-offset-2.col-sm-6 {
+        margin-top: 20px; /* Ajusta el espaciado superior según sea necesario */
+    }
+
+    .img-circle {
+        width: 100%; /* Hace que la imagen ocupe el ancho completo de su contenedor */
+        max-width: 200px; /* Ajusta el ancho máximo según sea necesario */
+        height: auto;
+        margin-top: 20px; /* Ajusta el espaciado superior según sea necesario */
+    }
+}
+
+
+@media (max-width: 767px) {
+    .foto-yo {
+        position: absolute;
+        top: -1400px; /* Ajusta la posición vertical según sea necesario */
+        left: 50%; /* Centra horizontalmente */
+        transform: translateX(-50%); /* Centra horizontalmente */
+        width: 100%; /* Hace que la imagen ocupe el ancho completo de la pantalla */
+        max-width: 200px; /* Ajusta el ancho máximo según sea necesario */
     }
 }
